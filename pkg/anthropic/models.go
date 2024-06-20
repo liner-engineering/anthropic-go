@@ -11,6 +11,9 @@ const (
 	// Ideal balance of intelligence and speed for enterprise workloads
 	Claude3Sonnet Model = "claude-3-sonnet-20240229"
 
+	// Ideal balance of intelligence and speed for enterprise workloads
+	Claude35Sonnet Model = "claude-3-5-sonnet-20240620"
+
 	// Fastest and most compact model for near-instant responsiveness
 	Claude3Haiku Model = "claude-3-haiku-20240307"
 
@@ -71,7 +74,7 @@ func (m Model) IsImageCompatible() bool {
 
 func (m Model) IsMessageCompatible() bool {
 	switch m {
-	case Claude3Opus, Claude3Sonnet, Claude3Haiku, ClaudeV2_1:
+	case Claude3Opus, Claude3Sonnet, Claude35Sonnet, Claude3Haiku, ClaudeV2_1:
 		return true
 	}
 	return false
