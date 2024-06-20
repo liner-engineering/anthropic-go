@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
+	"github.com/liner-engineering/anthropic-go/pkg/anthropic"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
+	"github.com/liner-engineering/anthropic-go/pkg/anthropic"
 )
 
 func main() {
@@ -22,7 +22,8 @@ func main() {
 					Type: "object",
 					Properties: map[string]anthropic.Property{
 						"city": {Type: "string", Description: "city to get the weather for"},
-						"unit": {Type: "string", Enum: []string{"celsius", "fahrenheit"}, Description: "temperature unit to return"}},
+						"unit": {Type: "string", Enum: []string{"celsius", "fahrenheit"}, Description: "temperature unit to return"},
+					},
 					Required: []string{"city"},
 				},
 			},

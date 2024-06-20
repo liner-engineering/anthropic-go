@@ -1,3 +1,3 @@
-module github.com/liner-engineering/anthropic-go/v2
+module github.com/liner-engineering/anthropic-go
 
-go 1.20
+go 1.22.1
